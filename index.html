@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav id="navbar">
+  <header><h1>Avrae Player Combat Guide</h1></header>
+  <ul>
+    <li><a class="nav-link" href="#joining_combat">Joining Combat</a></li>
+    <li><a class="nav-link" href="#attacking">Attacking</a></li>
+    <li><a class="nav-link" href="#casting_a_spell">Casting a Spell</a></li>
+    <li><a class="nav-link" href="#ending_your_turn">Ending Your Turn</a></li>
+    <li><a class="nav-link" href="#hp_commands">HP Commands</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+<h2>Avrae Player Combat Guide</h2>
+<section id="joining_combat" class="main-section">
+  <header>Joining Combat</header>
+  <article>
+  <p>To join combat, your DM must first start it. Once they have, proceed below to the following commands:</p>
+  <code>!i join [arguments]</code>
+  <p>This will add your active character to combat.</p>
+  <h3>Common arguments:</h3>
+  <ul>
+  <li>
+  <dl>
+    <dt>-h</dt><dd>hides AC/HP</dd>
+  </dl>
+  </li>
+  <li>
+  <dl>
+    <dt>adv/dis</dt><dd>gives advantage/disadvantage on initiative roll</dd>
+  </dl>
+  </li>
+  <li>
+    <dt>-p &lt;#&gt;</dt><dd>places at prerolled init</dd>
+  </li>
+  </ul>
+  <h2>Your Turn</h2>
+  <p>It’s your turn! On your turn, the most common actions are either attacking or casting a spell:</p>
+  </article>
+</section>
+<section id="attacking" class="main-section">
+  <header>Attacking</header>
+  <article>
+  <p>To attack, just use the same command you would use out of combat:</p>
+  <code>!attack &lt;​attack name&gt; -t &lt;target name&gt; [arguments]</code>
+  <h3>Common arguments:</h3>
+  <ul>
+  <li>
+  <dl>
+    <dt>-t &lt;target name&gt;</dt><dd>can be used in the case of attacks that target multiple creatures (such as a breath weapon).</dd>
+  </dl>
+  </li>
+  <li>
+  <dl>
+    <dt>-rr &lt;num&gt;</dt><dd>how many attacks to make at each target.</dd>
+  </dl>
+  </li>
+  <li>
+  <dl>
+    <dt>hit</dt><dd>The attack automatically hits.</dd>
+  </dl>
+  </li>
+  </ul>
+  <p>To see a list of your character’s attacks, use <code>!attack list</code></p>
+  </article>
+</section>
+<section id="casting_a_spell" class="main-section">
+  <header>Casting a Spell</header>
+  <article>
+  <p>To cast a spell, it’s also the same command in and out of combat:</p>
+  <code>!cast &lt;spell name&gt; -t &lt;target name&gt; [arguments]</code>
+  <h3>Common arguments:</h3>
+  <ul>
+  <li>
+  <dl>
+    <dt>-t &lt;target name&gt;</dt><dd>can be used in the case of spells that target multiple creatures (such as Fireball).</dd>
+  </dl>
+  </li>
+  <li>
+  <dl>
+    <dt>-l &lt;num&gt;</dt><dd>specifies the level to cast the spell at.</dd>
+  </dl>
+  </li>
+  <li>
+  <dl>
+    <dt>-i</dt><dd>ignores Spellbook restrictions (e.g. when casting from an item, as a ritual, etc.)</dd>
+  </dl>
+  </li>
+  </ul>
+  <p>To see a list of your spells, use <code>!spellbook</code></p>
+  </article>
+</section>
+<section id="ending_your_turn" class="main-section">
+  <header>Ending Your Turn</header>
+  <article>
+  <p>When you’re done with your turn, use this command to move to the next combatant:</p>
+  <code>!i next</code>
+  </article>
+</section>
+<section id="hp_commands" class="main-section">
+  <header>HP Commands</header>
+  <article>
+    <p>These commands should help manually change the HP of a combatant.</p>
+      <p>To modify your character’s HP:</p>
+      <code>!g hp &lt;value&gt;</code>
+      <p>To set your character’s HP:</p>
+      <code>!g hp set &lt;value&gt;</code>
+      <p>To add temporary HP:</p>
+      <code>!g thp &lt;value&gt;</code>
+  </article>
+</section>
+</main>
+</body>
+</html>
