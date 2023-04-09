@@ -142,7 +142,7 @@ code {
   background-color: #fff;
 }
 *::-webkit-scrollbar-track:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #fff;
 }
 *::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.2);
