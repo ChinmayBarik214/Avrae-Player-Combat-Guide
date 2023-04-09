@@ -132,14 +132,14 @@ code {
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  scrollbar-color: rgba(0, 0, 0, 0.2) #fff;
 }
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
   width: 12px;
 }
 *::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: #fff;
 }
 *::-webkit-scrollbar-track:hover {
   background-color: rgba(0, 0, 0, 0.05);
